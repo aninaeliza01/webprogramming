@@ -1,0 +1,44 @@
+<html>
+<body>
+<script>
+function valid()
+{
+var x=document.myform.name.value;
+var y=document.myform.password.value;
+var z=document.myform.cpassword.value;
+var g=document.myform.email.value;
+var atpos=g.indexOf("@");
+var dotpos=g.lastIndexOf(".");
+if(x==null||x=="")
+{
+alert("the name field should not be blank");
+}
+if(y.length<6)
+{
+alert("create strong password");
+}
+if(y!=z)
+{
+alert("enter the same password");
+}
+if(myform.male[0].checked==false && myform.male[1].checked==false)
+{
+alert("choose gender");
+}
+if(atpos<1||dotpos<atpos+2||dotpos+2>=g.length)
+{
+alert("invalid mail");
+}
+}
+</script>
+<form name="myform" onsubmit=valid()>
+name:<input type="text" name="name"><br>
+password:<input type="password" name="password"><br>
+confirm password:<input type="password" name="cpassword"><br>
+gender:<input type="radio" name="male" value="male">male<input type="radio" name="male" value="female">female<br>
+gmail:<input type="email" name="email"><br>
+<input  type="submit" value="SUBMIT">
+</form>
+</body>
+</html>
+

@@ -1,0 +1,57 @@
+<html>
+<head>
+<style>
+form {
+  background-color: linen;
+}
+
+h1 {
+  color: maroon;
+  margin-left: 40px;
+}
+</style>
+<title>reg form</title>
+</head>
+<body>
+<h1 style="text-align:center;">REGISTRATION FORM</h1>
+<form>
+<label for="fname">First name:</label>
+<input type="text" id="fname">
+<label for="lname">Last name:</label>
+<input type="text" id="lname"><br>
+<br><label for="mail">Email:</label>
+<input type="email" id="mail">
+<label for="ph">Phone Number:</label>
+<input type="number" id="ph"><br>
+ <label for="fname">Address:</label><br>
+ <textarea name="message" rows="5" cols="50"></textarea><br>
+<label for="add">Present address is same as address</label><br>
+ <input id="add" type="checkbox"name="YES" value="YES">YES
+ <input id="add" type="checkbox"name="NO"value="NO">NO<br>
+ <br><label for="dob">DOB:</label>
+<input type="date" id="dob"><br>
+ <label for="gen">Gender:</label><br>
+ <input type="radio" id="gen" name="gen" value="Female">Female
+ <input type="radio" id="gen" name="gen" value="Male">Male<br>
+ <label for="coun">Country:</label>
+<select id="coun">
+<option>INDIA</option>
+<option>CHINA</option>
+<option>NEPAL</option>
+<option>SRILANKA</option>
+<option>UAE</option>
+<option>USA</option>
+</select><br>
+ <label for="Qualification">Qualification:</label>
+ <input list="Qualification">
+  <datalist id="Qualification">
+  <option value="10th">10th</option>
+ <option value="12th">12th</option>
+ <option value="Degree">Degree</option>
+ <option value="Masters">Masters</option></datalist>
+ <br>
+  <button style="color:blue;text-align:center;" type="button" onclick="alert('ARE YOU SURE ALL ARE DONE THEN SUBMIT')">DONE</button>
+ <center><input type="submit" value="SUBMIT"></center><br>
+</form>
+</body>
+</html>

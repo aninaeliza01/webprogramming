@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>
+math function
+</title>
+</head>
+<body>
+<h1>PREDEFINED FUNCTIONS IN MATH</h1>
+<script>
+x=Math.floor(4.5)
+document.write("floor value of 4.5 is "+x+"<br>")
+y=Math.ceil(6.5)
+document.write("ceil value of 6.5 is "+y+"<br>")
+z=Math.max(70,80,90)
+document.write("max value of 70,80,90 :"+z+"<br>")
+z=Math.min(70,80,90)
+document.write("min value of 70,80,90 :"+z+"<br>")
+a=Math.round(5.8)
+document.write("round value of 5.8 is "+a+"<br>")
+b=Math.trunc(5.8)
+document.write("the integer part of 5.8 is "+b+"<br>")
+c=Math.sign(8)
+document.write("sign of 8 is "+c+"<br>")
+d=Math.pow(3,2)
+document.write("power of 3 is "+d+"<br>")
+e=Math.sqrt(16)
+document.write("squareroot of 16 is "+e+"<br>")
+f=Math.abs(+16)
+document.write("absolute value of +16 is "+f+"<br>")
+g=Math.sin(90 * Math.PI / 180)
+document.write("sin value of 90 is "+g+"<br>")
+h=Math.cos(180 * Math.PI / 180)
+document.write("cos value of 180 is "+h+"<br>")
+i=Math.log(1)
+document.write("log value of 1 is "+i+"<br>")
+j=Math.log2(4)
+document.write("log2 value of 4 is "+j+"<br>")
+k=Math.log10(30)
+document.write("log10 value of 30 is "+k+"<br>")
+l=Math.exp(10)
+document.write("exponential value of 10 is "+l+"<br>")
+</script>
+<h1>PREDEFINED FUNCTIONS IN STRING</h1>
+<script>
+var t="computer science"
+var tx="mca"
+x=t.length
+document.write("length of string is "+x+"<br>")
+y=t.slice(1,5)
+document.write("sliced part is "+y+"<br>")
+z=t.toUpperCase()
+document.write("in upper case "+z+"<br>")
+w=t.toLowerCase()
+document.write("in lower case "+w+"<br>")
+a=t.replace("science","mca")
+document.write("replaced into "+a+"<br>")
+b=t.concat(" ",tx)
+document.write("concatinate "+b+"<br>")
+c=t.padStart(22,"x") 
+document.write("padding at start "+c+"<br>")
+d=t.padEnd(22,"x") 
+document.write("padding at end "+d+"<br>")
+e=t.charAt(3) 
+document.write("4th character is "+e+"<br>")
+</script>
+</body>
+</html>
